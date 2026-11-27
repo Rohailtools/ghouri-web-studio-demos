@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sony WH-1000XM5 — London Studio, Sialkot Cantt</title>
+<meta name="description" content="Sony WH-1000XM5 flagship noise cancelling headphones at London Studio, Sialkot Cantt. Authorized Apple partner, since 1969. Order on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:#050505;color:#fff;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:rgba(5,5,5,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);transition:background .4s}
+  .brand{font-weight:800;letter-spacing:.14em;font-size:14px}
+  .brand span{color:#00D6FF}
+  .navlinks{display:flex;gap:26px;font-size:13px;color:rgba(255,255,255,.65)}
+  .navlinks a:hover{color:#fff}
+  .navcta{background:linear-gradient(90deg,#0050FF,#00D6FF);color:#fff;font-weight:600;font-size:13px;padding:8px 16px;border-radius:999px;white-space:nowrap}
+  @media(max-width:640px){.navlinks{display:none}}
+  /* SCROLL STAGE */
+  #stage{position:relative;height:560vh}
+  #sticky{position:sticky;top:0;height:100vh;height:100dvh;overflow:hidden;background:radial-gradient(120% 90% at 50% 40%,#0a0f22 0%,#050505 60%)}
+  #cv{position:absolute;inset:0;width:100%;height:100%}
+  .beat{position:absolute;z-index:5;max-width:560px;padding:0 24px;opacity:0;pointer-events:none;will-change:opacity,transform}
+  .beat h1,.beat h2{font-weight:800;letter-spacing:-.02em;line-height:1.05}
+  .beat h1{font-size:clamp(40px,8vw,76px)}
+  .beat h2{font-size:clamp(30px,5.4vw,52px)}
+  .beat p{margin-top:14px;font-size:clamp(15px,2.2vw,18px);line-height:1.55;color:rgba(255,255,255,.62)}
+  .beat .kick{font-size:12px;font-weight:700;letter-spacing:.28em;color:#00D6FF;text-transform:uppercase;margin-bottom:14px}
+  .grad{background:linear-gradient(180deg,#fff 55%,#9fd8ff 85%,#00D6FF);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .b-center{left:50%;top:12%;transform:translateX(-50%);text-align:center;width:100%}
+  .b-left{left:4%;top:50%;transform:translateY(-50%)}
+  .b-right{right:4%;top:50%;transform:translateY(-50%);text-align:left}
+  .b-final{left:50%;bottom:9%;transform:translateX(-50%);text-align:center;width:100%}
+  .b-final{pointer-events:none}
+  .b-final .cta-row{pointer-events:auto}
+  .cta-row{display:flex;gap:12px;justify-content:center;margin-top:22px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:600;font-size:15px}
+  .btn-wa{background:#22c55e;color:#04150a}
+  .btn-ghost{border:1px solid rgba(255,255,255,.35);color:#fff}
+  .points{margin-top:16px;display:grid;gap:9px}
+  .points div{font-size:15px;color:rgba(255,255,255,.75);display:flex;gap:10px;align-items:baseline}
+  .points i{color:#00D6FF;font-style:normal}
+  #hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:6;font-size:11px;letter-spacing:.3em;color:rgba(255,255,255,.45);text-transform:uppercase;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:.35}50%{opacity:.9}}
+  #bar{position:absolute;left:0;bottom:0;height:3px;background:linear-gradient(90deg,#0050FF,#00D6FF);width:0;z-index:6}
+  /* SECTIONS */
+  section{padding:84px 22px;max-width:1080px;margin:0 auto}
+  .sec-kick{font-size:12px;font-weight:700;letter-spacing:.28em;color:#00D6FF;text-transform:uppercase;text-align:center}
+  .sec-title{font-size:clamp(28px,5vw,44px);font-weight:800;letter-spacing:-.02em;text-align:center;margin-top:12px}
+  .sec-sub{text-align:center;color:rgba(255,255,255,.6);margin-top:12px;font-size:16px;line-height:1.6;max-width:640px;margin-left:auto;margin-right:auto}
+  .rating{display:flex;justify-content:center;gap:10px;align-items:center;margin-top:22px;font-size:15px;color:rgba(255,255,255,.8)}
+  .stars{color:#FFC531;letter-spacing:2px;font-size:18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:40px}
+  .card{background:#0A0A0C;border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:24px 18px;text-align:center}
+  .card .ic{font-size:30px}
+  .card h3{font-size:16px;font-weight:700;margin-top:12px}
+  .card p{font-size:13px;color:rgba(255,255,255,.55);margin-top:6px;line-height:1.5}
+  .visit{background:#0A0A0C;border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:34px 26px;margin-top:44px;display:grid;gap:10px;text-align:center}
+  .visit h3{font-size:22px;font-weight:800}
+  .visit p{color:rgba(255,255,255,.65);font-size:15px;line-height:1.6}
+  .visit .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+  footer{padding:34px 22px 110px;text-align:center;color:rgba(255,255,255,.4);font-size:13px;border-top:1px solid rgba(255,255,255,.06)}
+  footer b{color:rgba(255,255,255,.7)}
+  #wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#22c55e;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(34,197,94,.45)}
+  #wa-float svg{width:30px;height:30px;fill:#fff}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">LONDON <span>STUDIO</span></div>
+  <div class="navlinks">
+    <a href="#stage">Overview</a><a href="#stage">Technology</a><a href="#store">Store</a><a href="#visit">Visit</a>
+  </div>
+  <a class="navcta" href="https://wa.me/923087865900?text=Assalam%20o%20Alaikum!%20London%20Studio%20se%20Sony%20WH-1000XM5%20ke%20baare%20mein%20maloomat%20chahiye." target="_blank" rel="noopener">Order on WhatsApp</a>
+</nav>
+
+<div id="stage">
+  <div id="sticky">
+    <canvas id="cv"></canvas>
+
+    <div class="beat b-center" id="beat1">
+      <div class="kick">London Studio · Sialkot Cantt</div>
+      <h1 class="grad">Sony WH-1000XM5</h1>
+      <p style="font-size:clamp(17px,2.6vw,22px);color:rgba(255,255,255,.85)">Silence, perfected.</p>
+      <p>Flagship wireless noise cancelling, re-engineered for a world that never stops. Scroll to take it apart.</p>
+    </div>
+
+    <div class="beat b-left" id="beat2">
+      <div class="kick">Engineering</div>
+      <h2>Precision-engineered<br>for silence.</h2>
+      <p>Custom 30mm drivers, sealed acoustic chambers and optimised airflow deliver studio-grade clarity.</p>
+      <p>Every component is tuned for balance, power and comfort — hour after hour.</p>
+    </div>
+
+    <div class="beat b-right" id="beat3">
+      <div class="kick">Noise Cancelling</div>
+      <h2>Adaptive noise<br>cancelling, redefined.</h2>
+      <div class="points">
+        <div><i>—</i> Eight-microphone array listens in every direction</div>
+        <div><i>—</i> Real-time noise analysis adapts to your environment</div>
+        <div><i>—</i> Planes, trains and crowds simply fade away</div>
+      </div>
+    </div>
+
+    <div class="beat b-left" id="beat4">
+      <div class="kick">Sound</div>
+      <h2>Immersive,<br>lifelike sound.</h2>
+      <p>High-performance drivers unlock detail, depth and texture in every track.</p>
+      <p>AI-enhanced upscaling restores clarity to compressed audio — every note feels alive, for up to 30 hours on one charge.</p>
+    </div>
+
+    <div class="beat b-final" id="beat5">
+      <h2 class="grad">Hear everything.<br>Feel nothing else.</h2>
+      <p>WH-1000XM5 at London Studio — genuine, with official support.</p>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/923087865900?text=Assalam%20o%20Alaikum!%20Mujhe%20Sony%20WH-1000XM5%20headphones%20chahiye.%20Price%20aur%20availability%20bata%20dein." target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a class="btn btn-ghost" href="#visit">Visit the store</a>
+      </div>
+    </div>
+
+    <div id="hint">Scroll</div>
+    <div id="bar"></div>
+  </div>
+</div>
+
+<section id="store">
+  <div class="sec-kick">Since 1969</div>
+  <h2 class="sec-title">Three generations of trust</h2>
+  <p class="sec-sub">London Studio is Sialkot's authorised Apple partner (Mercantile Pakistan) and the city's top-rated gadget store — genuine products, official warranty support and expert repairs under one roof.</p>
+  <div class="rating"><span class="stars">★★★★★</span><span><b>4.8</b> · 230 Google reviews · #1 cell phone store in Sialkot</span></div>
+
+  <div class="grid">
+    <div class="card"><div class="ic">📱</div><h3>iPhone</h3><p>Latest models, PTA approved, official warranty</p></div>
+    <div class="card"><div class="ic">💻</div><h3>MacBook &amp; iPad</h3><p>Full Apple range for work and creativity</p></div>
+    <div class="card"><div class="ic">🎧</div><h3>Audio</h3><p>Sony WH-1000XM5, AirPods &amp; premium headphones</p></div>
+    <div class="card"><div class="ic">🎮</div><h3>Gaming</h3><p>PlayStation 5, games &amp; accessories</p></div>
+    <div class="card"><div class="ic">📷</div><h3>Cameras</h3><p>Insta360 action cameras &amp; photo studio</p></div>
+    <div class="card"><div class="ic">🛠️</div><h3>Repairs</h3><p>Professional repairs &amp; after-sales service</p></div>
+  </div>
+
+  <div class="visit" id="visit">
+    <h3>Visit London Studio</h3>
+    <p>232-D Allama Iqbal Road, Near Iqbal Square, Ghanta Ghar Chowk,<br>Sialkot Cantt — Open every day, 11:30 AM to 9:00 PM</p>
+    <p>📞 0308 7865900 · 052 4265846<br>✉️ londonstudioonline@proton.me</p>
+    <div class="row">
+      <a class="btn btn-wa" href="https://wa.me/923087865900" target="_blank" rel="noopener">WhatsApp Us</a>
+      <a class="btn btn-ghost" href="tel:+923087865900">Call the Store</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>London Studio</b> · Mobiles · Photography · Gadgets — Sialkot Cantt<br>
+  Demo website crafted by <b>Ghouri Web Studio</b>
+</footer>
+
+<a id="wa-float" href="https://wa.me/923087865900?text=Assalam%20o%20Alaikum!%20London%20Studio%20se%20ek%20product%20ke%20baare%20mein%20poochna%20hai." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.4 1.1.6 1.1 1.4 1.9 2.5 2.5.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg>
+</a>
+
+<script>
+(function(){
+  var seq=['frames/f1.jpg','frames/f2.jpg','frames/f3.jpg','frames/f4.jpg','frames/f3.jpg','frames/f2.jpg','frames/f1.jpg'];
+  var imgs=[],loaded=0;
+  var cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+  var stage=document.getElementById('stage'),bar=document.getElementById('bar'),hint=document.getElementById('hint');
+  var beats=[['beat1',-0.02,0.15],['beat2',0.17,0.39],['beat3',0.42,0.63],['beat4',0.66,0.83],['beat5',0.86,1.05]].map(function(b){
+    return {el:document.getElementById(b[0]),a:b[1],z:b[2]};
+  });
+  function resize(){var d=Math.min(window.devicePixelRatio||1,2);cv.width=innerWidth*d;cv.height=innerHeight*d;}
+  resize();addEventListener('resize',function(){resize();draw();});
+  seq.forEach(function(src,i){var im=new Image();im.onload=function(){loaded++;draw();};im.src=src;imgs[i]=im;});
+  function cover(img){
+    var cw=cv.width,ch=cv.height,ir=img.naturalWidth/img.naturalHeight,cr=cw/ch,s;
+    if(ir>cr){s=ch/img.naturalHeight;}else{s=cw/img.naturalWidth;}
+    var w=img.naturalWidth*s,h=img.naturalHeight*s;
+    return [(cw-w)/2,(ch-h)/2,w,h];
+  }
+  var cur=-1;
+  function draw(){
+    if(!imgs[0]||!imgs[0].complete)return;
+    var r=stage.getBoundingClientRect();
+    var total=stage.offsetHeight-innerHeight;
+    var p=Math.min(1,Math.max(0,-r.top/total));
+    if(Math.abs(p-cur)<0.0005)return;cur=p;
+    var pos=p*(imgs.length-1),i=Math.floor(pos),f=pos-i;
+    ctx.fillStyle='#050505';ctx.fillRect(0,0,cv.width,cv.height);
+    var zoom=1+0.045*Math.sin(p*Math.PI);
+    function blit(img,alpha){
+      if(!img||!img.complete)return;
+      var d=cover(img);var w=d[2]*zoom,h=d[3]*zoom;
+      ctx.globalAlpha=alpha;
+      ctx.drawImage(img,(cv.width-w)/2,(cv.height-h)/2,w,h);
+      ctx.globalAlpha=1;
+    }
+    blit(imgs[i],1);
+    if(i<imgs.length-1&&f>0)blit(imgs[i+1],f);
+    bar.style.width=(p*100)+'%';
+    hint.style.opacity=p>0.02?0:1;
+    beats.forEach(function(b){
+      var o=0;
+      if(p>=b.a&&p<=b.z){var fi=Math.min(1,(p-b.a)/0.045),fo=Math.min(1,(b.z-p)/0.045);o=Math.min(fi,fo);}
+      b.el.style.opacity=o;
+      b.el.style.transform='';
+      if(b.el.id==='beat1'||b.el.id==='beat5'){b.el.style.transform='translateX(-50%) translateY('+((1-o)*14)+'px)';}
+      else{b.el.style.transform='translateY(calc(-50% + '+((1-o)*16)+'px))';}
+    });
+  }
+  var tick=false;
+  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(function(){draw();tick=false;});}},{passive:true});
+  draw();
+})();
+</script>
+</body>
+</html>
