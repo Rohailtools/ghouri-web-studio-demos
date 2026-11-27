@@ -64,6 +64,8 @@
   .lab.flip .tag::before{left:auto;right:-13px}
   .lab.up .tag{left:50%;top:auto;bottom:13px;transform:translateX(-50%)}
   .lab.up .tag::before{left:50%;top:auto;bottom:-13px;width:1px;height:13px}
+  .lab.down .tag{left:50%;top:13px;transform:translateX(-50%)}
+  .lab.down .tag::before{left:50%;top:-13px;width:1px;height:13px}
   /* stage dots */
   #dots{position:absolute;right:16px;top:50%;transform:translateY(-50%);z-index:6;display:grid;gap:9px}
   #dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.25);transition:all .3s}
@@ -228,7 +230,7 @@
     {t:'30MM DRIVER',fx:.19,fy:.635,c:''},
     {t:'EAR CUSHION',fx:.81,fy:.795,c:'up'},
     {t:'ANC MICROPHONES',fx:.365,fy:.79,c:''},
-    {t:'CIRCUIT BOARD',fx:.50,fy:.80,c:'up'},
+    {t:'CIRCUIT BOARD',fx:.50,fy:.80,c:'down'},
     {t:'BATTERY',fx:.64,fy:.795,c:''}
   ];
   LABS.forEach(function(L){
