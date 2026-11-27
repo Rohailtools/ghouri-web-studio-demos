@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sony WH-1000XM5 — London Studio, Sialkot Cantt</title>
-<meta name="description" content="Sony WH-1000XM5 flagship noise cancelling headphones at London Studio, Sialkot Cantt. Authorized Apple partner, since 1969. Order on WhatsApp.">
+<title>Sony WH-1000XM5 — London Studio, Sialkot Cantt (Est. 1969)</title>
+<meta name="description" content="Sony WH-1000XM5 flagship noise cancelling headphones at London Studio, Sialkot Cantt. Authorized Apple Partner, since 1969. Order on WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -13,30 +13,40 @@
   body{background:#050505;color:#fff;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   a{color:inherit;text-decoration:none}
   /* NAV */
-  nav{position:fixed;top:0;left:0;right:0;z-index:50;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:rgba(5,5,5,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);transition:background .4s}
-  .brand{font-weight:800;letter-spacing:.14em;font-size:14px}
-  .brand span{color:#00D6FF}
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;min-height:58px;display:flex;align-items:center;justify-content:space-between;padding:8px 20px;background:rgba(5,5,5,.6);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+  .brand{line-height:1.15}
+  .brand .nm{font-weight:900;letter-spacing:.16em;font-size:15px}
+  .brand .nm span{color:#00D6FF}
+  .brand .sub{font-size:9.5px;letter-spacing:.3em;color:rgba(255,255,255,.5);font-weight:600}
   .navlinks{display:flex;gap:26px;font-size:13px;color:rgba(255,255,255,.65)}
   .navlinks a:hover{color:#fff}
   .navcta{background:linear-gradient(90deg,#0050FF,#00D6FF);color:#fff;font-weight:600;font-size:13px;padding:8px 16px;border-radius:999px;white-space:nowrap}
   @media(max-width:640px){.navlinks{display:none}}
   /* SCROLL STAGE */
-  #stage{position:relative;height:560vh}
-  #sticky{position:sticky;top:0;height:100vh;height:100dvh;overflow:hidden;background:#050505 url('frames/f1.webp') center center/contain no-repeat}
-  #cv{position:absolute;inset:0;width:100%;height:100%}
+  #stage{position:relative;height:380vh}
+  #sticky{position:sticky;top:0;height:100vh;height:100dvh;overflow:hidden;background:#050505 url('frames/f1.webp') center 46%/min(860px,88vw) auto no-repeat}
+  #sticky::before{content:'';position:absolute;inset:0;background:
+    radial-gradient(55% 42% at 50% 46%,rgba(0,80,255,.13) 0%,transparent 70%),
+    repeating-linear-gradient(0deg,rgba(0,150,255,.045) 0 1px,transparent 1px 46px),
+    repeating-linear-gradient(90deg,rgba(0,150,255,.045) 0 1px,transparent 1px 46px)}
+  #cv{position:absolute;inset:0;width:100%;height:100%;animation:intro .9s ease-out}
+  @keyframes intro{from{opacity:0;transform:scale(.965)}to{opacity:1;transform:scale(1)}}
+  #glow{position:absolute;width:44vmin;height:44vmin;border-radius:50%;background:radial-gradient(circle,rgba(0,214,255,.28) 0%,transparent 65%);filter:blur(12px);opacity:0;pointer-events:none;transform:translate(-50%,-50%)}
   .beat{position:absolute;z-index:5;max-width:560px;padding:0 24px;opacity:0;pointer-events:none;will-change:opacity,transform}
   .beat h1,.beat h2{font-weight:800;letter-spacing:-.02em;line-height:1.05}
-  .beat h1{font-size:clamp(40px,8vw,76px)}
-  .beat h2{font-size:clamp(30px,5.4vw,52px)}
+  .beat h1{font-size:clamp(38px,7.6vw,72px)}
+  .beat h2{font-size:clamp(28px,5.2vw,50px)}
   .beat p{margin-top:14px;font-size:clamp(15px,2.2vw,18px);line-height:1.55;color:rgba(255,255,255,.62)}
   .beat .kick{font-size:12px;font-weight:700;letter-spacing:.28em;color:#00D6FF;text-transform:uppercase;margin-bottom:14px}
   .grad{background:linear-gradient(180deg,#fff 55%,#9fd8ff 85%,#00D6FF);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .b-center{left:50%;top:12%;transform:translateX(-50%);text-align:center;width:100%}
+  .b-center{left:50%;top:9%;transform:translateX(-50%);text-align:center;width:100%}
   .b-left{left:4%;top:50%;transform:translateY(-50%)}
-  .b-right{right:4%;top:50%;transform:translateY(-50%);text-align:left}
-  .b-final{left:50%;bottom:9%;transform:translateX(-50%);text-align:center;width:100%}
-  .b-final{pointer-events:none}
+  .b-right{right:4%;top:50%;transform:translateY(-50%)}
+  .b-final{left:50%;bottom:7%;transform:translateX(-50%);text-align:center;width:100%}
   .b-final .cta-row{pointer-events:auto}
+  .pills{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+  .pill{font-size:12px;font-weight:600;letter-spacing:.04em;padding:7px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.05);color:rgba(255,255,255,.85)}
+  .pill b{color:#FFC531}
   .cta-row{display:flex;gap:12px;justify-content:center;margin-top:22px;flex-wrap:wrap}
   .btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:600;font-size:15px}
   .btn-wa{background:#22c55e;color:#04150a}
@@ -44,15 +54,36 @@
   .points{margin-top:16px;display:grid;gap:9px}
   .points div{font-size:15px;color:rgba(255,255,255,.75);display:flex;gap:10px;align-items:baseline}
   .points i{color:#00D6FF;font-style:normal}
-  #hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:6;font-size:11px;letter-spacing:.3em;color:rgba(255,255,255,.45);text-transform:uppercase;animation:pulse 2s infinite}
+  /* part labels (diagram stage) */
+  #labels{position:absolute;inset:0;z-index:4;opacity:0;pointer-events:none}
+  .lab{position:absolute;transform:translate(-50%,-50%)}
+  .lab .dot{display:block;width:7px;height:7px;border-radius:50%;background:#00D6FF;box-shadow:0 0 10px rgba(0,214,255,.9)}
+  .lab .tag{position:absolute;left:13px;top:50%;transform:translateY(-50%);white-space:nowrap;font-size:11px;font-weight:600;letter-spacing:.08em;color:rgba(255,255,255,.92);background:rgba(5,10,20,.72);border:1px solid rgba(0,214,255,.35);padding:4px 9px;border-radius:6px}
+  .lab .tag::before{content:'';position:absolute;left:-13px;top:50%;width:13px;height:1px;background:rgba(0,214,255,.55)}
+  .lab.flip .tag{left:auto;right:13px}
+  .lab.flip .tag::before{left:auto;right:-13px}
+  .lab.up .tag{left:50%;top:auto;bottom:13px;transform:translateX(-50%)}
+  .lab.up .tag::before{left:50%;top:auto;bottom:-13px;width:1px;height:13px}
+  /* stage dots */
+  #dots{position:absolute;right:16px;top:50%;transform:translateY(-50%);z-index:6;display:grid;gap:9px}
+  #dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.25);transition:all .3s}
+  #dots i.on{background:#00D6FF;box-shadow:0 0 9px rgba(0,214,255,.9);transform:scale(1.25)}
+  #hint{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:6;font-size:11px;letter-spacing:.3em;color:rgba(255,255,255,.45);text-transform:uppercase;animation:pulse 2s infinite}
   @keyframes pulse{0%,100%{opacity:.35}50%{opacity:.9}}
   #bar{position:absolute;left:0;bottom:0;height:3px;background:linear-gradient(90deg,#0050FF,#00D6FF);width:0;z-index:6}
+  /* BRAND STRIP */
+  .brandstrip{padding:70px 22px 10px;text-align:center}
+  .brandstrip .mono{display:inline-flex;width:62px;height:62px;border-radius:50%;border:1.5px solid rgba(255,255,255,.35);align-items:center;justify-content:center;font-weight:900;letter-spacing:.08em;font-size:19px}
+  .brandstrip h2{font-size:clamp(30px,6.4vw,54px);font-weight:900;letter-spacing:.12em;margin-top:18px}
+  .brandstrip h2 span{color:#00D6FF}
+  .brandstrip .tag{margin-top:10px;font-size:12px;letter-spacing:.34em;color:rgba(255,255,255,.55);font-weight:600}
+  .brandstrip p{max-width:620px;margin:18px auto 0;color:rgba(255,255,255,.62);line-height:1.65;font-size:15.5px}
   /* SECTIONS */
-  section{padding:84px 22px;max-width:1080px;margin:0 auto}
+  section{padding:64px 22px 84px;max-width:1080px;margin:0 auto}
   .sec-kick{font-size:12px;font-weight:700;letter-spacing:.28em;color:#00D6FF;text-transform:uppercase;text-align:center}
   .sec-title{font-size:clamp(28px,5vw,44px);font-weight:800;letter-spacing:-.02em;text-align:center;margin-top:12px}
   .sec-sub{text-align:center;color:rgba(255,255,255,.6);margin-top:12px;font-size:16px;line-height:1.6;max-width:640px;margin-left:auto;margin-right:auto}
-  .rating{display:flex;justify-content:center;gap:10px;align-items:center;margin-top:22px;font-size:15px;color:rgba(255,255,255,.8)}
+  .rating{display:flex;justify-content:center;gap:10px;align-items:center;margin-top:22px;font-size:15px;color:rgba(255,255,255,.8);flex-wrap:wrap;text-align:center}
   .stars{color:#FFC531;letter-spacing:2px;font-size:18px}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:40px}
   .card{background:#0A0A0C;border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:24px 18px;text-align:center}
@@ -63,7 +94,7 @@
   .visit h3{font-size:22px;font-weight:800}
   .visit p{color:rgba(255,255,255,.65);font-size:15px;line-height:1.6}
   .visit .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:14px}
-  footer{padding:34px 22px 110px;text-align:center;color:rgba(255,255,255,.4);font-size:13px;border-top:1px solid rgba(255,255,255,.06)}
+  footer{padding:34px 22px 110px;text-align:center;color:rgba(255,255,255,.4);font-size:13px;border-top:1px solid rgba(255,255,255,.06);line-height:1.7}
   footer b{color:rgba(255,255,255,.7)}
   #wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#22c55e;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(34,197,94,.45)}
   #wa-float svg{width:30px;height:30px;fill:#fff}
@@ -72,7 +103,10 @@
 <body>
 
 <nav>
-  <div class="brand">LONDON <span>STUDIO</span></div>
+  <div class="brand">
+    <div class="nm">LONDON <span>STUDIO</span></div>
+    <div class="sub">EST. 1969 · SIALKOT CANTT</div>
+  </div>
   <div class="navlinks">
     <a href="#stage">Overview</a><a href="#stage">Technology</a><a href="#store">Store</a><a href="#visit">Visit</a>
   </div>
@@ -81,13 +115,19 @@
 
 <div id="stage">
   <div id="sticky">
+    <div id="glow"></div>
     <canvas id="cv"></canvas>
+    <div id="labels"></div>
 
     <div class="beat b-center" id="beat1">
       <div class="kick">London Studio · Sialkot Cantt</div>
       <h1 class="grad">Sony WH-1000XM5</h1>
       <p style="font-size:clamp(17px,2.6vw,22px);color:rgba(255,255,255,.85)">Silence, perfected.</p>
-      <p>Flagship wireless noise cancelling, re-engineered for a world that never stops. Scroll to take it apart.</p>
+      <div class="pills">
+        <span class="pill">Authorized Apple Partner</span>
+        <span class="pill"><b>★ 4.8</b> · 230 Google reviews</span>
+        <span class="pill">Since 1969</span>
+      </div>
     </div>
 
     <div class="beat b-left" id="beat2">
@@ -123,15 +163,23 @@
       </div>
     </div>
 
+    <div id="dots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
     <div id="hint">Scroll</div>
     <div id="bar"></div>
   </div>
 </div>
 
+<div class="brandstrip">
+  <div class="mono">LS</div>
+  <h2>LONDON <span>STUDIO</span></h2>
+  <div class="tag">MOBILES · PHOTOGRAPHY · GADGETS</div>
+  <p>Since 1969, three generations of one family have run London Studio at Ghanta Ghar Chowk, Sialkot Cantt — today an authorised Apple partner (Mercantile Pakistan) and the city's top-rated gadget store.</p>
+</div>
+
 <section id="store">
-  <div class="sec-kick">Since 1969</div>
-  <h2 class="sec-title">Three generations of trust</h2>
-  <p class="sec-sub">London Studio is Sialkot's authorised Apple partner (Mercantile Pakistan) and the city's top-rated gadget store — genuine products, official warranty support and expert repairs under one roof.</p>
+  <div class="sec-kick">The Store</div>
+  <h2 class="sec-title">Everything genuine, under one roof</h2>
+  <p class="sec-sub">Genuine products, official warranty support and expert repairs — the way it has been done here for over 55 years.</p>
   <div class="rating"><span class="stars">★★★★★</span><span><b>4.8</b> · 230 Google reviews · #1 cell phone store in Sialkot</span></div>
 
   <div class="grid">
@@ -155,7 +203,7 @@
 </section>
 
 <footer>
-  <b>London Studio</b> · Mobiles · Photography · Gadgets — Sialkot Cantt<br>
+  <b>London Studio</b> · Est. 1969 · Mobiles · Photography · Gadgets — Sialkot Cantt<br>
   Demo website crafted by <b>Ghouri Web Studio</b>
 </footer>
 
@@ -165,56 +213,91 @@
 
 <script>
 (function(){
-  var seq=['frames/f1.webp','frames/f2.webp','frames/f3.webp','frames/f4.webp','frames/f3.webp','frames/f2.webp','frames/f1.webp'];
+  var seq=['frames/f1.webp','frames/f2.webp','frames/f2b.webp','frames/f3.webp','frames/f3b.webp','frames/f4.webp','frames/f3b.webp','frames/f3.webp','frames/f2b.webp','frames/f2.webp','frames/f1.webp'];
   var imgs=[],loaded=0;
   var cv=document.getElementById('cv'),ctx=cv.getContext('2d');
   var stage=document.getElementById('stage'),bar=document.getElementById('bar'),hint=document.getElementById('hint');
-  var beats=[['beat1',-0.02,0.15],['beat2',0.17,0.39],['beat3',0.42,0.63],['beat4',0.66,0.83],['beat5',0.86,1.05]].map(function(b){
+  var glow=document.getElementById('glow'),labelsBox=document.getElementById('labels');
+  var dots=[].slice.call(document.querySelectorAll('#dots i'));
+  var beats=[['beat1',-0.02,0.13],['beat2',0.155,0.36],['beat3',0.395,0.605],['beat4',0.64,0.825],['beat5',0.85,1.05]].map(function(b){
     return {el:document.getElementById(b[0]),a:b[1],z:b[2]};
   });
+  /* part labels on the exploded diagram — fx/fy = position inside the frame */
+  var LABS=[
+    {t:'HEADBAND',fx:.50,fy:.13,c:'up'},
+    {t:'30MM DRIVER',fx:.19,fy:.635,c:''},
+    {t:'EAR CUSHION',fx:.81,fy:.795,c:'flip'},
+    {t:'ANC MICROPHONES',fx:.365,fy:.79,c:''},
+    {t:'CIRCUIT BOARD',fx:.50,fy:.80,c:'up'},
+    {t:'BATTERY',fx:.64,fy:.795,c:''}
+  ];
+  LABS.forEach(function(L){
+    var d=document.createElement('div');d.className='lab '+L.c;
+    d.innerHTML='<span class="dot"></span><span class="tag">'+L.t+'</span>';
+    labelsBox.appendChild(d);L.el=d;
+  });
+  /* glow windows: which part lights up, when */
+  var GLOWS=[{a:.27,b:.40,fx:.19,fy:.64},{a:.42,b:.58,fx:.50,fy:.80},{a:.60,b:.73,fx:.81,fy:.64}];
   function resize(){var d=Math.min(window.devicePixelRatio||1,2);cv.width=innerWidth*d;cv.height=innerHeight*d;}
   resize();addEventListener('resize',function(){resize();render(shown<0?0:shown);});
   seq.forEach(function(src,i){var im=new Image();im.onload=function(){loaded++;if(shown<0)shown=0;render(shown);};im.src=src;imgs[i]=im;});
-  function cover(img){
-    var cw=cv.width,ch=cv.height,ir=img.naturalWidth/img.naturalHeight,cr=cw/ch,s;
-    if(ir>cr){s=ch/img.naturalHeight;}else{s=cw/img.naturalWidth;}
-    var w=img.naturalWidth*s,h=img.naturalHeight*s;
-    return [(cw-w)/2,(ch-h)/2,w,h];
-  }
-  var target=0,shown=-1,rafOn=false;
+  var target=0,shown=-1,rafOn=false,lastDot=-1;
   function readTarget(){
     var r=stage.getBoundingClientRect();
     var total=stage.offsetHeight-innerHeight;
     target=Math.min(1,Math.max(0,-r.top/total));
   }
   function loop(){
-    shown+=(target-shown)*0.13;
+    shown+=(target-shown)*0.22;
     if(Math.abs(target-shown)<0.0004)shown=target;
     render(shown);
     if(shown!==target){requestAnimationFrame(loop);}else{rafOn=false;}
   }
   function kick(){readTarget();if(shown<0)shown=target;if(!rafOn){rafOn=true;requestAnimationFrame(loop);}}
+  function win(p,a,b){if(p<a||p>b)return 0;var fi=Math.min(1,(p-a)/0.03),fo=Math.min(1,(b-p)/0.03);return Math.min(fi,fo);}
   function render(p){
     if(!imgs[0]||!imgs[0].complete)return;
-    var pos=p*(imgs.length-1),i=Math.floor(pos),f=pos-i;
+    var pos=p*(seq.length-1),i=Math.floor(pos),f=pos-i;
+    var fe=f*f*(3-2*f); /* smoothstep — slight hold at each stage */
+    var dz=1+0.16*Math.max(0,1-Math.abs(pos-5)/1.3); /* gentle zoom on the diagram */
     ctx.fillStyle='#050505';ctx.fillRect(0,0,cv.width,cv.height);
-    var zoom=1+0.045*Math.sin(p*Math.PI);
+    var rect=null;
     function blit(img,alpha){
       if(!img||!img.complete)return;
-      var d=cover(img);var w=d[2]*zoom,h=d[3]*zoom;
-      ctx.globalAlpha=alpha;
-      ctx.drawImage(img,(cv.width-w)/2,(cv.height-h)/2,w,h);
-      ctx.globalAlpha=1;
+      var s=Math.min(cv.width*0.86/img.naturalWidth,cv.height*0.56/img.naturalHeight)*dz;
+      var w=img.naturalWidth*s,h=img.naturalHeight*s;
+      var x=cv.width/2-w/2,y=cv.height*0.46-h/2;
+      ctx.globalAlpha=alpha;ctx.drawImage(img,x,y,w,h);ctx.globalAlpha=1;
+      rect={x:x,y:y,w:w,h:h};
     }
     blit(imgs[i],1);
-    if(i<imgs.length-1&&f>0)blit(imgs[i+1],f);
+    if(i<seq.length-1&&f>0)blit(imgs[i+1],fe);
     bar.style.width=(p*100)+'%';
     hint.style.opacity=p>0.02?0:1;
+    /* stage dots */
+    var st=Math.round(pos<=5?pos:10-pos);
+    if(st!==lastDot){lastDot=st;dots.forEach(function(d,k){d.className=k===st?'on':'';});}
+    /* labels only near the full diagram (pos ~5) */
+    var lo=win(p,0.445,0.555);
+    labelsBox.style.opacity=lo;
+    if(rect&&lo>0){
+      LABS.forEach(function(L){
+        L.el.style.left=((rect.x+L.fx*rect.w)/(cv.width/innerWidth))+'px';
+        L.el.style.top=((rect.y+L.fy*rect.h)/(cv.height/innerHeight))+'px';
+      });
+    }
+    /* glow follows the story */
+    var g=0,gx=0,gy=0;
+    GLOWS.forEach(function(G){var o=win(p,G.a,G.b);if(o>g){g=o;gx=G.fx;gy=G.fy;}});
+    if(rect&&g>0){
+      glow.style.opacity=g*0.9;
+      glow.style.left=((rect.x+gx*rect.w)/(cv.width/innerWidth))+'px';
+      glow.style.top=((rect.y+gy*rect.h)/(cv.height/innerHeight))+'px';
+    }else{glow.style.opacity=0;}
     beats.forEach(function(b){
       var o=0;
-      if(p>=b.a&&p<=b.z){var fi=Math.min(1,(p-b.a)/0.045),fo=Math.min(1,(b.z-p)/0.045);o=Math.min(fi,fo);}
+      if(p>=b.a&&p<=b.z){var fi=Math.min(1,(p-b.a)/0.04),fo=Math.min(1,(b.z-p)/0.04);o=Math.min(fi,fo);}
       b.el.style.opacity=o;
-      b.el.style.transform='';
       if(b.el.id==='beat1'||b.el.id==='beat5'){b.el.style.transform='translateX(-50%) translateY('+((1-o)*14)+'px)';}
       else{b.el.style.transform='translateY(calc(-50% + '+((1-o)*16)+'px))';}
     });
